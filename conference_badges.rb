@@ -24,6 +24,8 @@ def assign_rooms(speakers)
   speakers.each_with_index {|item, index|
     new_array[index] = "Hello, #{item}! You'll be assigned to room #{index}"
   }
+  
+  new_array
 end
 
 def printer()
