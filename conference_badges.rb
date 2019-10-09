@@ -8,6 +8,7 @@ def batch_badge_creator(array)
   new_array = []
   while i < array.size do
     new_array.push(badge_maker(array[i]))
+    i += 1
   end
 end
 
