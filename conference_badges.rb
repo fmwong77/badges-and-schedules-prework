@@ -24,6 +24,17 @@ def assign_rooms(speakers)
 end
 
 def printer(attendees)
-  batch_badge_creator(attendees)
-  assign_rooms(attendees)
+  i = 0
+  badge_array = batch_badge_creator(attendees)
+  while i < badge_array do
+    puts badge_array[i]
+    i += 1
+  end
+  
+  i = 0
+  room_array = assign_rooms(attendees)
+  while i < room_array do
+    puts room_array[i]
+    i += 1
+  end
 end
