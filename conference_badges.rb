@@ -22,7 +22,7 @@ def assign_rooms(speakers)
   # end
   # new_array
   speakers.each_with_index {|item, index|
-    new_array[index] = "#{item}
+    new_array[index] = "Hello, #{item}! You'll be assigned to room #{index}"
   }
 end
 
