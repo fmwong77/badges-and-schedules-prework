@@ -15,12 +15,15 @@ end
 
 def assign_rooms(speakers)
   # i = 0
-  # new_array = []
+  new_array = []
   # while i < array.size do
   #   new_array.push(badge_maker(array[i]))
   #   i += 1
   # end
   # new_array
+  speakers.each_with_index {|item, index|
+    new_array[index] = "#{item}
+  }
 end
 
 def printer()
