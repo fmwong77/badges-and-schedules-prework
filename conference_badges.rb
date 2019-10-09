@@ -10,6 +10,7 @@ def batch_badge_creator(array)
     new_array.push(badge_maker(array[i]))
     i += 1
   end
+  new_array
 end
 
 def assign_rooms(speakers)
