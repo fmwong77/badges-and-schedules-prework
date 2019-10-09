@@ -14,15 +14,10 @@ def batch_badge_creator(array)
 end
 
 def assign_rooms(speakers)
-  # i = 0
   new_array = []
-  # while i < array.size do
-  #   new_array.push(badge_maker(array[i]))
-  #   i += 1
-  # end
-  # new_array
+
   speakers.each_with_index {|item, index|
-    new_array[index] = "Hello, #{item}! You'll be assigned to room #{index}"
+    new_array[index] = "Hello, #{item}! You'll be assigned to room #{index+1}"
   }
   
   new_array
